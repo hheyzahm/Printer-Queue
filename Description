@@ -1,0 +1,46 @@
+Data Structures and Algorithms 
+Printer Queue
+You have to simulate the printer queue (printer’s printing jobs) by using Queue class.
+Queue follows FIFO (first in first out) rule. Recall that as students send printing tasks
+to the shared printer, the tasks are placed in a queue to be processed in a first-come
+first-served manner. You can understand it by the following picture.
+You have to work on PrintingJob where the printer is capable of storing and
+processing the input jobs. Each job has an associated timeOfArrival, and number of
+pages in the input file. The printer prints 6 pages in a minute. For example, consider
+if printing job is sent to a printer at 12:05:30 time and it is composed of 60 pages. It
+will take 10 minutes to complete this job, therefore it will start at 12:05:30, end at
+12:15:30. During this one more job is arrived at 12:07:00 time, which is composed
+of 12 pages, then this job has to wait in the queue, and would be assigned the starting
+time as 12:05:30 and would take another 2 minutes to finish, thus would be marked
+with the end time 12:07:30. 
+Data Structures and Algorithms Resource Person:Uzma Farooq, Dr. Adnan Abid
+You have to maintain queue and have to do the following:
+i) calculate the total time for which all printing jobs will be done.
+ii) Furnish each job with its start time and end time (i.e. when would the
+printer start printing a job, and when would it end printing it.)
+Create a class PrinterQueue, create a function processJobs that takes input array of
+PrintingJobs where each job is represented with submissionTime, startTime,
+endTime, dataSize.
+ At the time of submission each job is represented by numberOfPages and
+submissionTime.
+ Whenever a new job is added to the queue, the system assigns it approximate
+startTime and endTime. It also shows the queue after every addition.
+ The function processJobs manipulates all jobs using a queue one after the
+other and removes a job once it is complete. It also prints the queue after each
+deletion.
+ It also computes the total time taken to print all jobs in the input array.
+Data Structures and Algorithms Resource Person:Uzma Farooq, Dr. Adnan Abid
+Expression Evaluator
+You need to design and implement an expression evaluator. The expression
+evaluator will take an expression as input in an infix format. It will compute the
+solution in two phases. In the first phase it will convert the infix expression into
+postfix notation. Subsequently, it will solve the postfix expression to calculate the
+result. In both phases it will use stack.
+Consider the following input expression in infix format:
+5 + 10 * 3
+In the first phase the input expression will be converted into postfix and the output
+will be
+5 10 3*+
+Later on, this expression will be computed and it will result into 35.
+You are supposed to write a fully object oriented program to implement the solution
+to this problem.
